@@ -1,0 +1,42 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1711150855680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711150884999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,9 @@\n - TailwindCSS\n - Typescript\n - Prettier\n \n-\n+## Get the frontend and backend running simultaneously:\n+  - go to WBTK-backend and run: npm start\n+  - go to WBTK-frontend and run: npm run dev\n+  - go to the browser and run localhost:5173\n+  - Test the application by logging in your credentials.\n"
+                },
+                {
+                    "date": 1711150895506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n ## Project setup\n \n - Clone the repository\n-- Run `yarn` to install dependencies\n+- Run `npm install` to install dependencies\n - Run `yarn dev` to start the development server\n - Run `yarn format` at the root of the project to format the file before pushing the code\n \n ## Technologies Used\n"
+                },
+                {
+                    "date": 1711150900920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n ## Project setup\n \n - Clone the repository\n - Run `npm install` to install dependencies\n-- Run `yarn dev` to start the development server\n+- Run `npm rundev` to start the development server\n - Run `yarn format` at the root of the project to format the file before pushing the code\n \n ## Technologies Used\n \n"
+                },
+                {
+                    "date": 1711150909514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n ## Project setup\n \n - Clone the repository\n - Run `npm install` to install dependencies\n-- Run `npm rundev` to start the development server\n-- Run `yarn format` at the root of the project to format the file before pushing the code\n+- Run `npm run dev` to start the development server\n+<!-- - Run `yarn format` at the root of the project to format the file before pushing the code -->\n \n ## Technologies Used\n \n - React\n"
+                },
+                {
+                    "date": 1711150916624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n - Clone the repository\n - Run `npm install` to install dependencies\n - Run `npm run dev` to start the development server\n-<!-- - Run `yarn format` at the root of the project to format the file before pushing the code -->\n+- Run `yarn format` at the root of the project to format the file before pushing the code -->\n \n ## Technologies Used\n \n - React\n"
+                },
+                {
+                    "date": 1711150932630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n \n - Clone the repository\n - Run `npm install` to install dependencies\n - Run `npm run dev` to start the development server\n-- Run `yarn format` at the root of the project to format the file before pushing the code -->\n \n+\n ## Technologies Used\n \n - React\n - Vite\n"
+                }
+            ],
+            "date": 1711150855680,
+            "name": "Commit-0",
+            "content": "# Women In Blockchain Technology Kenya (WBTK)-frontend\n\n## Project setup\n\n- Clone the repository\n- Run `yarn` to install dependencies\n- Run `yarn dev` to start the development server\n- Run `yarn format` at the root of the project to format the file before pushing the code\n\n## Technologies Used\n\n- React\n- Vite\n- TailwindCSS\n- Typescript\n- Prettier\n\n\n"
+        }
+    ]
+}

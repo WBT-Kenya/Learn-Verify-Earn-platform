@@ -1,5 +1,4 @@
 //configuration of the deployment file
-// modifications done
 module.exports = {
   env: { browser: true, es2020: true },
   extends: [
