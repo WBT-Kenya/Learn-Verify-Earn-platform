@@ -1,4 +1,4 @@
-// configurations for typescript
+// 
 {
   "compilerOptions": {
     "composite": true,

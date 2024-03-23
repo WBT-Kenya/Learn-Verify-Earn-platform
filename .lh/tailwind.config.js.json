@@ -1,0 +1,38 @@
+{
+    "sourceFile": "tailwind.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1711152725818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711152733333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,13 @@\n   plugins: [],\n };\n \n \n+  content: [\"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}\"],\n+  theme: {\n+    extend: {},\n+  },\n+  // Add a new plugin for custom functionality\n+  plugins: [\n+    require('@tailwindcss/typography'),\n+  ],\n+};\n"
+                },
+                {
+                    "date": 1711152743109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,8 @@\n   },\n   plugins: [],\n };\n \n-\n-  content: [\"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}\"],\n   theme: {\n     extend: {},\n   },\n   // Add a new plugin for custom functionality\n"
+                },
+                {
+                    "date": 1711152749935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,9 @@\n   },\n   plugins: [],\n };\n \n-  theme: {\n-    extend: {},\n-  },\n+\n   // Add a new plugin for custom functionality\n   plugins: [\n     require('@tailwindcss/typography'),\n   ],\n"
+                },
+                {
+                    "date": 1711152775006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,5 @@\n   plugins: [],\n };\n \n \n-  // Add a new plugin for custom functionality\n-  plugins: [\n-    require('@tailwindcss/typography'),\n-  ],\n-};\n+ \n"
+                },
+                {
+                    "date": 1711152806398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   content: [\"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}\"],\n   theme: {\n     extend: {},\n   },\n+  \n   plugins: [],\n };\n \n \n"
+                }
+            ],
+            "date": 1711152725818,
+            "name": "Commit-0",
+            "content": "//\n/** @type {import('tailwindcss').Config} */\nexport default {\n  content: [\"./index.html\", \"./src/**/*.{js,ts,jsx,tsx}\"],\n  theme: {\n    extend: {},\n  },\n  plugins: [],\n};\n\n\n"
+        }
+    ]
+}

@@ -5,7 +5,6 @@ export default {
   theme: {
     extend: {},
   },
-  // Add or remove plugins as required
   plugins: [],
 };
 

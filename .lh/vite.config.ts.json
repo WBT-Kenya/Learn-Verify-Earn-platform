@@ -1,0 +1,22 @@
+{
+    "sourceFile": "vite.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1711152993069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711152998955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-//\n+//vite template\n import { defineConfig } from \"vite\";\n import react from \"@vitejs/plugin-react\";\n \n // https://vitejs.dev/config/\n"
+                }
+            ],
+            "date": 1711152993069,
+            "name": "Commit-0",
+            "content": "//\nimport { defineConfig } from \"vite\";\nimport react from \"@vitejs/plugin-react\";\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [react()],\n});\n"
+        }
+    ]
+}

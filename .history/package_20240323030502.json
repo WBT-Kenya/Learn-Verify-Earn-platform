@@ -1,5 +1,6 @@
 {
-  "name": "beyond-blockchain-frontend",
+  // "name": "beyond-blockchain-frontend",
+  "name": "cartesi-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -72,8 +73,7 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version",
-      "last 1 microsoft edge version"
+      "last 1 safari version"
     ]
   }
 }

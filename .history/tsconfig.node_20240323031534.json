@@ -1,4 +1,4 @@
-// configurations for typescript
+// configurations for tr
 {
   "compilerOptions": {
     "composite": true,

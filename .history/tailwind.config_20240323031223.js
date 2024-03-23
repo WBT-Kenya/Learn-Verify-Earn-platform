@@ -5,9 +5,14 @@ export default {
   theme: {
     extend: {},
   },
-  // Add or remove plugins as required
   plugins: [],
 };
 
-
- 
+  theme: {
+    extend: {},
+  },
+  // Add a new plugin for custom functionality
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
+};

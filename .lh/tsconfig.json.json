@@ -1,0 +1,26 @@
+{
+    "sourceFile": "tsconfig.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1711152843041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711152848293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     \"forceConsistentCasingInFileNames\": true\n   },\n   \"include\": [\n     \"src\",\n-    \n+    \"public\"\n   ],\n   \"references\": [\n     {\n       \"path\": \"./tsconfig.node.json\"\n"
+                },
+                {
+                    "date": 1711152880767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     \"forceConsistentCasingInFileNames\": true\n   },\n   \"include\": [\n     \"src\",\n-    \"public\"\n+    \n   ],\n   \"references\": [\n     {\n       \"path\": \"./tsconfig.node.json\"\n"
+                }
+            ],
+            "date": 1711152843041,
+            "name": "Commit-0",
+            "content": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2020\",\n    \"useDefineForClassFields\": true,\n    \"lib\": [\n      \"ES2020\",\n      \"DOM\",\n      \"DOM.Iterable\"\n    ],\n    \"module\": \"ESNext\",\n    \"skipLibCheck\": true,\n    \"allowJs\": true,\n    \"allowSyntheticDefaultImports\": false,\n    \"moduleResolution\": \"node\",\n    \"allowImportingTsExtensions\": true,\n    \"resolveJsonModule\": true,\n    \"isolatedModules\": true,\n    \"noEmit\": true,\n    \"jsx\": \"preserve\",\n    \"strict\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"noFallthroughCasesInSwitch\": true,\n    \"esModuleInterop\": true,\n    \"forceConsistentCasingInFileNames\": true\n  },\n  \"include\": [\n    \"src\",\n    \n  ],\n  \"references\": [\n    {\n      \"path\": \"./tsconfig.node.json\"\n    }\n  ]\n}\n"
+        }
+    ]
+}
