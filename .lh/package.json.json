@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1711152237557,
@@ -44,6 +44,10 @@
                 {
                     "date": 1711152404550,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,8 @@\n     \"development\": [\n       \"last 1 chrome version\",\n       \"last 1 firefox version\",\n       \"last 1 safari version\",\n-      \n+      \"last 1 microsoft edge version\"\n     ]\n   }\n }\n"
+                },
+                {
+                    "date": 1711217927211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n     ],\n     \"development\": [\n       \"last 1 chrome version\",\n       \"last 1 firefox version\",\n-      \"last 1 safari version\",\n-      \"last 1 microsoft edge version\"\n+      \"last 1 safari version\"\n+      \n     ]\n   }\n }\n"
                 }
             ],
             "date": 1711152237557,
