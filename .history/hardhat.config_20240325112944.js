@@ -1,6 +1,5 @@
 
-// require('@nomicfoundation/hardhat-ethers');
-require("@nomicfoundation/hardhat-toolbox");
+require('@nomicfoundation/hardhat-ethers');
 
 
 module.exports = {

@@ -1,0 +1,34 @@
+{
+    "sourceFile": "scripts/arbit-deploy.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1711353768086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711353838366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +0,0 @@\n-\n-\n-async function main() {\n-    const [deployer] = await ethers.getSigners();\n-    console.log(\"Deploying contracts with the account:\", deployer.address);\n-  \n-    // const TokenIncentiveReward = await ethers.getContractFactory(\"TokenIncentiveReward\");\n-    const tokenincentive = await ethers.getContractFactory(\"TokenIncentive\");\n-    const token = await TokenIncentiveReward.deploy(wbtk, ARBH, xyz, 1000000); // Deploy with an initial supply of 1,000,000 tokens\n-  \n-    console.log(\"Token deployed to:\", token.address);\n-  }\n-  \n-  main()\n-    .then(() => process.exit(0))\n-    .catch((error) => {\n-      console.error(error);\n-      process.exit(1);\n-    });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711353846470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+const { ethers } = require(\"hardhat\");\n+\n+async function main() {\n+  const { ethers } = require(\"hardhat\");\n+  // Get the contract factories\n+  const StudentManagement = await ethers.getContractFactory(\"StudentManagement\");\n+  const MyToken = await ethers.getContractFactory(\"myToken\");\n+\n+  // Deploy the contracts\n+  const studentManagement = await StudentManagement.deploy();\n+  await studentManagement.deployed();\n+  console.log(\"StudentManagement contract deployed to:\", studentManagement.address);\n+\n+  const myToken = await MyToken.deploy(1000000); // Adjust initial supply as needed\n+  await myToken.deployed();\n+  console.log(\"MyToken contract deployed to:\", myToken.address);\n+}\n+\n+// Execute the main function\n+main()\n+  .then(() => process.exit(0))\n+  .catch((error) => {\n+    console.error(error);\n+    process.exit(1);\n+  });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711353879012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n const { ethers } = require(\"hardhat\");\n-\n+const path = require(\"path\");\n async function main() {\n   const { ethers } = require(\"hardhat\");\n   // Get the contract factories\n   const StudentManagement = await ethers.getContractFactory(\"StudentManagement\");\n"
+                },
+                {
+                    "date": 1711353886906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n const { ethers } = require(\"hardhat\");\n const path = require(\"path\");\n+\n async function main() {\n   const { ethers } = require(\"hardhat\");\n   // Get the contract factories\n   const StudentManagement = await ethers.getContractFactory(\"StudentManagement\");\n"
+                }
+            ],
+            "date": 1711353768086,
+            "name": "Commit-0",
+            "content": "\n\nasync function main() {\n    const [deployer] = await ethers.getSigners();\n    console.log(\"Deploying contracts with the account:\", deployer.address);\n  \n    // const TokenIncentiveReward = await ethers.getContractFactory(\"TokenIncentiveReward\");\n    const tokenincentive = await ethers.getContractFactory(\"TokenIncentive\");\n    const token = await TokenIncentiveReward.deploy(wbtk, ARBH, xyz, 1000000); // Deploy with an initial supply of 1,000,000 tokens\n  \n    console.log(\"Token deployed to:\", token.address);\n  }\n  \n  main()\n    .then(() => process.exit(0))\n    .catch((error) => {\n      console.error(error);\n      process.exit(1);\n    });"
+        }
+    ]
+}

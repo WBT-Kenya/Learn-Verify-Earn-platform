@@ -1,0 +1,78 @@
+{
+    "sourceFile": "hardhat.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1711353917934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1711353952544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,16 @@\n /** @type import('hardhat/config').HardhatUserConfig */\n module.exports = {\n   solidity: \"0.8.20\",\n };\n+networks: {\n+  // mainnet: {\n+  //   url: 'https://1rpc.io/arb',\n+  //   accounts: ['0xYOUR_PRIVATE_KEY'],\n+  //   gasPrice: 20000000000, // 20 Gwei\n+  // },\n+  testnet: {\n+    url: 'https://sepolia-rollup.arbitrum.io/rpc',\n+    accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n+    gasPrice: 20000000000, // 20 Gwei\n+  },\n+},\n"
+                },
+                {
+                    "date": 1711353959715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,4 +20,5 @@\n     accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n     gasPrice: 20000000000, // 20 Gwei\n   },\n },\n+\n"
+                },
+                {
+                    "date": 1711353966491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,5 @@\n     url: 'https://sepolia-rollup.arbitrum.io/rpc',\n     accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n     gasPrice: 20000000000, // 20 Gwei\n   },\n-},\n+},\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711353988959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,16 +8,4 @@\n /** @type import('hardhat/config').HardhatUserConfig */\n module.exports = {\n   solidity: \"0.8.20\",\n };\n-networks: {\n-  // mainnet: {\n-  //   url: 'https://1rpc.io/arb',\n-  //   accounts: ['0xYOUR_PRIVATE_KEY'],\n-  //   gasPrice: 20000000000, // 20 Gwei\n-  // },\n-  testnet: {\n-    url: 'https://sepolia-rollup.arbitrum.io/rpc',\n-    accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n-    gasPrice: 20000000000, // 20 Gwei\n-  },\n-},\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711354345309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n require(\"@nomicfoundation/hardhat-toolbox\");\n \n+\n // The next line is part of the sample project, you don't need it in your\n // project. It imports a Hardhat task definition, that can be used for\n // testing the frontend.\n require(\"./tasks/faucet\");\n@@ -8,4 +9,22 @@\n /** @type import('hardhat/config').HardhatUserConfig */\n module.exports = {\n   solidity: \"0.8.20\",\n };\n+require('@nomicfoundation/hardhat-ethers');\n+module.exports = {\n+  solidity: {\n+    version: '0.8.20',\n+  },\n+  networks: {\n+    // mainnet: {\n+    //   url: 'https://1rpc.io/arb',\n+    //   accounts: ['0xYOUR_PRIVATE_KEY'],\n+    //   gasPrice: 20000000000, // 20 Gwei\n+    // },\n+    testnet: {\n+      url: 'https://sepolia-rollup.arbitrum.io/rpc',\n+      accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n+      gasPrice: 20000000000, // 20 Gwei\n+    },\n+  },\n+};\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711354370946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n require(\"@nomicfoundation/hardhat-toolbox\");\n+// require(\"@nomiclabs/hardhat-waffle\");\n+require(\"@nomiclabs/hardhat-ethers\");\n \n-\n // The next line is part of the sample project, you don't need it in your\n // project. It imports a Hardhat task definition, that can be used for\n // testing the frontend.\n require(\"./tasks/faucet\");\n"
+                },
+                {
+                    "date": 1711354597763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,31 +0,0 @@\n-require(\"@nomicfoundation/hardhat-toolbox\");\n-// require(\"@nomiclabs/hardhat-waffle\");\n-require(\"@nomiclabs/hardhat-ethers\");\n-\n-// The next line is part of the sample project, you don't need it in your\n-// project. It imports a Hardhat task definition, that can be used for\n-// testing the frontend.\n-require(\"./tasks/faucet\");\n-\n-/** @type import('hardhat/config').HardhatUserConfig */\n-module.exports = {\n-  solidity: \"0.8.20\",\n-};\n-require('@nomicfoundation/hardhat-ethers');\n-module.exports = {\n-  solidity: {\n-    version: '0.8.20',\n-  },\n-  networks: {\n-    // mainnet: {\n-    //   url: 'https://1rpc.io/arb',\n-    //   accounts: ['0xYOUR_PRIVATE_KEY'],\n-    //   gasPrice: 20000000000, // 20 Gwei\n-    // },\n-    testnet: {\n-      url: 'https://sepolia-rollup.arbitrum.io/rpc',\n-      accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n-      gasPrice: 20000000000, // 20 Gwei\n-    },\n-  },\n-};\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711355356869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+\n+require('@nomicfoundation/hardhat-ethers');\n+\n+module.exports = {\n+  solidity: {\n+    version: '0.8.20',\n+  },\n+  networks: {\n+    // mainnet: {\n+    //   url: 'https://1rpc.io/arb',\n+    //   accounts: ['0xYOUR_PRIVATE_KEY'],\n+    //   gasPrice: 20000000000, // 20 Gwei\n+    // },\n+    testnet: {\n+      url: 'https://sepolia-rollup.arbitrum.io/rpc',\n+      accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n+      gasPrice: 20000000000, // 20 Gwei\n+    },\n+  },\n+};\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711355362476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n require('@nomicfoundation/hardhat-ethers');\n-\n+re\n module.exports = {\n   solidity: {\n     version: '0.8.20',\n   },\n"
+                },
+                {
+                    "date": 1711355384176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n \n require('@nomicfoundation/hardhat-ethers');\n-re\n+\n+\n module.exports = {\n   solidity: {\n     version: '0.8.20',\n   },\n"
+                },
+                {
+                    "date": 1711355410969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n \n require('@nomicfoundation/hardhat-ethers');\n+require('@nomicfoundation/hardhat-toolbox');\n \n \n module.exports = {\n   solidity: {\n"
+                },
+                {
+                    "date": 1711355418926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \n require('@nomicfoundation/hardhat-ethers');\n-require('@nomicfoundation/hardhat-toolbox');\n+require(\"@nomicfoundation/hardhat-toolbox\");\n \n \n module.exports = {\n   solidity: {\n"
+                },
+                {
+                    "date": 1711355645289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-require('@nomicfoundation/hardhat-ethers');\n+// require('@nomicfoundation/hardhat-ethers');\n require(\"@nomicfoundation/hardhat-toolbox\");\n \n \n module.exports = {\n"
+                },
+                {
+                    "date": 1711358692889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n     // },\n     testnet: {\n       url: 'https://sepolia-rollup.arbitrum.io/rpc',\n       accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n+      \n       gasPrice: 20000000000, // 20 Gwei\n     },\n   },\n };\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1711358733754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n     // },\n     testnet: {\n       url: 'https://sepolia-rollup.arbitrum.io/rpc',\n       accounts: ['0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334'],\n-      \n       gasPrice: 20000000000, // 20 Gwei\n     },\n   },\n };\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1711353917934,
+            "name": "Commit-0",
+            "content": "require(\"@nomicfoundation/hardhat-toolbox\");\n\n// The next line is part of the sample project, you don't need it in your\n// project. It imports a Hardhat task definition, that can be used for\n// testing the frontend.\nrequire(\"./tasks/faucet\");\n\n/** @type import('hardhat/config').HardhatUserConfig */\nmodule.exports = {\n  solidity: \"0.8.20\",\n};\n"
+        }
+    ]
+}
