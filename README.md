@@ -1,4 +1,4 @@
-# Social LEarn, Verify, Earn platform with Arbitrum RollUp.
+# Social Learn, Verify, Earn platform with Arbitrum RollUp.
 
 This project is intended to be used with the
 [Hardhat Beginners Tutorial](https://hardhat.org/tutorial), but you should be
