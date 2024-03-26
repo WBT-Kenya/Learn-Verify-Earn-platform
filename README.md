@@ -47,9 +47,8 @@ npx hardhat run scripts/arbit-deploy.js --network testnet
 
 
 ## Setting up your editor
-
-- [Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode) is the official Hardhat extension that adds advanced support for Solidity to VSCode. If you use Visual Studio Code, give it a try!
-- install npm, nodejs v18+.
+-[Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode) is the official Hardhat extension that adds advanced support for Solidity to VSCode. If you use Visual Studio Code, give it a try!
+-install npm, nodejs v18+.
 
 ## Get the frontend and backend running simultaneously:
   - go to WBTK-frontend and run npm run dev
