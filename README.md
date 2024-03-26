@@ -1,4 +1,4 @@
-# Hardhat Boilerplate
+# Social LEarn, Verify, Earn platform with Arbitrum RollUp.
 
 This project is intended to be used with the
 [Hardhat Beginners Tutorial](https://hardhat.org/tutorial), but you should be
@@ -56,3 +56,8 @@ npx hardhat run scripts/arbit-deploy.js --network testnet
   - Test the application by logging in your credentials.
 
 **Thank you_!**
+
+## Architecture Diagram:
+
+![Architecture dgm to Arbitrum](https://github.com/WBT-Kenya/Learn-Verify-Earn-platform/assets/9214845/84e0138a-e11c-4e96-b86b-0312dd7f009d)
+
