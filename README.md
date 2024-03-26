@@ -32,10 +32,10 @@ npx hardhat run scripts/arbit-deploy.js --network testnet
 ```
 
 ## User Guide
--install metamask wallet as a browser extension.
--Add arbitrum sepolia testnet to metamask. Visit https://chainlist.org/
--To load testnet with funds, visit Arbitrum sepolia faucet.
--To view deployed contracts and tokens, visit : https://sepolia.arbiscan.io/
+- install metamask wallet as a browser extension.
+- Add arbitrum sepolia testnet to metamask. Visit https://chainlist.org/
+- To load testnet with funds, visit Arbitrum sepolia faucet.
+- To view deployed contracts and tokens, visit : https://sepolia.arbiscan.io/
 
 
 ## What's Included?
@@ -47,8 +47,8 @@ npx hardhat run scripts/arbit-deploy.js --network testnet
 
 
 ## Setting up your editor
--[Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode) is the official Hardhat extension that adds advanced support for Solidity to VSCode. If you use Visual Studio Code, give it a try!
--install npm, nodejs v18+.
+- [Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode) is the official Hardhat extension that adds advanced support for Solidity to VSCode. If you use Visual Studio Code, give it a try!
+- install nodejs v18+.
 
 ## Get the frontend and backend running simultaneously:
   - go to WBTK-frontend and run npm run dev
