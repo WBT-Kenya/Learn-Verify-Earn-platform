@@ -83,7 +83,8 @@ contract StudentManagement {
 
 pragma solidity ^0.8.19;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-contract myToken is ERC20 {
+// myToken is an ARBToken inherited from ERC20.
+contract myToken is ERC20 {  
     constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
         _mint(msg.sender, initialSupply * 10**18);
     }

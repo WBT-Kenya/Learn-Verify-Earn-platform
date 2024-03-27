@@ -245,8 +245,6 @@ const contractABI = [
   },
 ];
 
-// const contractAddress = process.env.CONTRACT_ADDRESS;
-// const contractABI = JSON.parse(process.env.CONTRACT_ABI);
 const contractAddress = "0x0E1bB946eE0E1a5CAc71beBE72Fbb1B154238013";
 // const privateKey = "0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334";
 
@@ -256,7 +254,10 @@ const provider = new ethers.providers.JsonRpcProvider(
 ); // Replace with your provider endpoint
 
 // Wallet connected to provider
-const wallet = new ethers.Wallet("5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334", provider); // Replace <YOUR_PRIVATE_KEY> with your private key
+const wallet = new ethers.Wallet(
+  "5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334",
+  provider
+); // Replace <YOUR_PRIVATE_KEY> with your private key
 
 // Contract instance
 const contract = new ethers.Contract(contractAddress, contractABI, wallet);

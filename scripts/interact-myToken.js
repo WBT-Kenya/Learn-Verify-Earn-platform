@@ -349,13 +349,10 @@ const provider = new ethers.providers.JsonRpcProvider(
  );
 
 // // Address of the deployed myToken.sol contract
-// const myTokenAddress = process.env.MY_TOKEN_ADDRESS;
-// const myTokenABI = JSON.parse(process.env.MYTOKEN_ABI);
+
 const myTokenAddress = "0xe343D1a9549C9E08e20d4754feA228aE2f8d33f4"
 
 
-// const myTokenABI = process.env.MY_TOKEN_ABI;
-// const privateKey = process.env.PRIVATE_KEY; //private key from metamask wallet.also used in hardhat config
 const privateKey = "0x5e11d997859d8f2cf4c013af210812b5e5de1e7127a591e036cbeacae2333334";
 
 const wallet = new ethers.Wallet(privateKey, provider);
